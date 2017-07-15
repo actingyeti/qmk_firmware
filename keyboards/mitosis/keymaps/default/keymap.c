@@ -39,11 +39,11 @@ enum mitosis_macros
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 [_MALT] = { /* Malt Layout, customised for reduced columns (ex: quote and shift locations) */
-  {KC_Q,    KC_P,    KC_Y,    KC_C,    KC_B,           KC_V,    KC_M,    KC_U,    KC_Z,    KC_L    },
-  {KC_A,    KC_N,    KC_I,    KC_S,    KC_F,           KC_D,    KC_T,    KC_H,    KC_O,    KC_R    },
-  {KC_COMM, KC_DOT,  KC_J,    KC_G,    KC_SLSH,        KC_SCLN, KC_W,    KC_K,    KC_QUOT, KC_X    },
-  {XXXXXXX, M(VOLU), M(ESCM), KC_TAB,  KC_LCTL,        KC_LALT, KC_ENT,  KC_DEL,  KC_PGUP, XXXXXXX },
-  {XXXXXXX, M(VOLD), KC_LGUI, KC_E,    FNKEY,          SHIFT,   KC_SPC,  KC_BSPC, KC_PGDN, XXXXXXX }
+  {KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,           KC_Y,    KC_U,    KC_I,    KC_O,    KC_P    },
+  {KC_A,    KC_S,    KC_D,    KC_F,    KC_G,           KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN },
+  {KC_Z,    KC_X,    KC_C,    KC_V,    KC_B,           KC_N,    KC_M,    KC_COMM, KC_DOT,  KC_SLSH },
+  {XXXXXXX, M(VOLU), M(ESCM), KC_LALT, KC_LCTL,        KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, XXXXXXX },
+  {XXXXXXX, M(VOLD), KC_DELETE, KC_BSPC, FNKEY,        KC_LSFT, KC_SPC,  KC_ENT,  KC_TAB,  XXXXXXX }
 },
 
 
@@ -60,19 +60,19 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 [_FUNCTION] = { /* Function Layer, primary alternative layer featuring numpad on right hand,
                                    cursor keys on left hand, and all symbols*/
-  {KC_AMPR, KC_PERC, KC_UP,   KC_CIRC, KC_PIPE,       KC_LBRC, KC_7,    KC_8,    KC_9,    KC_MINS },
-  {KC_AT,   KC_LEFT, KC_DOWN, KC_RGHT, KC_HASH,       KC_LPRN, KC_4,    KC_5,    KC_6,    KC_PLUS },
-  {KC_ASTR, KC_UNDS, KC_EXLM, KC_DLR,  KC_BSLS,       KC_LCBR, KC_1,    KC_2,    KC_3,    KC_ENT  },
-  {XXXXXXX, KC_HOME, KC_GRV,  KC_PWR,  _______,       _______, KC_EQL,  KC_TILD, KC_DOT,  XXXXXXX },
-  {XXXXXXX, KC_END,  _______, _______, _______,       _______, KC_0,    _______, KC_PSCR, XXXXXXX }
+  {KC_EXLM, KC_AT, KC_HASH,  KC_DLR, KC_PERC,         KC_CIRC, KC_AMPR, KC_ASTR, KC_LPRN, KC_RPRN },
+  {KC_1,    KC_2,  KC_3,     KC_4,   KC_5,            KC_6,    KC_7,    KC_8,    KC_9,    KC_0    },
+  {_____,   _____, KC_PSCR, KC_GRV,  KC_QUOT,         KC_MINS, KC_EQL,  KC_DOT,  KC_LBRC, KC_RBRC },
+  {XXXXXXX, ______, ______,  ______,  _______,        _______, KC_EQL,  KC_HOME, KC_PGUP, XXXXXXX },
+  {XXXXXXX, ______, ______,  ______,  _______,        _______, KC_0,    KC_END,  KC_PGDN, XXXXXXX }
 },
 
 
 [_FUNCSHIFT] = { /* Function Shifted Layer, secondary alternative layer with closing brackets,
                                             and F-keys under their numpad equivalents*/
-  {_______, _______, _______, _______, _______,       KC_RBRC, KC_F7,   KC_F8,   KC_F9,   KC_F10  },
-  {_______, _______, _______, _______, _______,       KC_RPRN, KC_F4,   KC_F5,   KC_F6,   KC_F11  },
-  {_______, _______, _______, _______, _______,       KC_RCBR, KC_F1,   KC_F2,   KC_F3,   KC_F12  },
+  {_______, _______, _______, _______, _______,       _______, KC_F7,   KC_F8,   KC_F9,   KC_F10  },
+  {_______, _______, _______, _______, _______,       _______, KC_F4,   KC_F5,   KC_F6,   KC_F11  },
+  {_______, _______, _______, _______, _______,       _______, KC_F1,   KC_F2,   KC_F3,   KC_F12  },
   {XXXXXXX, _______, _______, _______, _______,       _______, _______, _______, _______, XXXXXXX },
   {XXXXXXX, _______, _______, _______, _______,       _______, _______, _______, _______, XXXXXXX }
 }
